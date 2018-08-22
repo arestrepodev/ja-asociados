@@ -1,0 +1,52 @@
+/**
+* Styles for JA-ASOCIADOS
+* Versión: 0.1.0
+* Dependencies: Normalize
+*/
+
+/**
+* Structure:
+* 
+* 1. Layout
+* 2. Tipography
+* 3. Colors
+* 4. Components
+* 5. Buttons
+* 6. Modals
+*/
+
+
+/* 1. Layout */
+
+body{
+    margin: 0;
+    padding: 0;
+}
+
+.Wrapper{
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    display: grid;
+    grid-template-columns: 200px 1fr;
+    grid-template-rows: 100px 1fr 500px;
+    grid-template-areas: 
+        'Navbar' 'Header'
+        'Navbar' 'Main'
+        'Navbar' 'Footer';
+}
+
+.Navbar{
+    grid-area: 'Navbar';
+}
+.Header{
+    grid-area: 'Header';
+}
+.Main{
+    grid-area: 'Main';
+}
+.Footer{
+    grid-area: 'Footer';
+}
+
+

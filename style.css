@@ -1,5 +1,5 @@
 /*
-Theme Name: Plantilla Jaime Arteaga y Asociados
+Theme Name: ja-asociados
 Theme URI: ja-a.co/plantilla/documentacion.html
 Author: Arnold Restrepo Hernández
 Author URI: https://github.com/ArnoldRestrepo
@@ -10,3 +10,5 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Tags: HTML5, template, CSS Grid, PWA
 Text Domain: https://github.com/ArnoldRestrepo
 */
+
+@import 'css/app.css';
