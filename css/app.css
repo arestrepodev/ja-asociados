@@ -7,6 +7,8 @@
 /**
 * Structure:
 * 
++ -1. RESET ELEMENTS
+* 0. Variables
 * 1. Layout
 * 2. Tipography
 * 3. Colors
@@ -15,38 +17,240 @@
 * 6. Modals
 */
 
+/* -1. RESET ELEMENTS */
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+/* 0. Variables */
+:root{
+    --blanco: #ffffff;
+    --naranja: #e58900;
+    --azul: #3692c3;
+    --verde: #2bad70;
+    --amarillo: #d8bf2d;
+    --negro: #0d0d0d;
+    --grisClaro: #b8b8b8;
+    --grisOscuro: #706f6f;
+    --transition: all 100ms ease-in;
+}
+
+/* Scrollbar */
+/* width */
+::-webkit-scrollbar {
+    width: 4px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: #fefefe; 
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: var(--grisClaro); 
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: var(--grisOscuro); 
+}
 
 /* 1. Layout */
-
 body{
     margin: 0;
     padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
 }
+
+h1,h2,h3,h4,h5,h6{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
 
 .Wrapper{
     width: 100%;
     margin: 0;
     padding: 0;
     display: grid;
-    grid-template-columns: 200px 1fr;
-    grid-template-rows: 100px 1fr 500px;
+    grid-template-columns: 6rem 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 80px 1fr 500px;
     grid-template-areas: 
-        'Navbar' 'Header'
-        'Navbar' 'Main'
-        'Navbar' 'Footer';
+        'Navbar Header Header Header Header Header'
+        'Navbar Main Main Main Sidebar Sidebar '
+        'Navbar Footer Footer Footer Footer Footer';
 }
 
-.Navbar{
-    grid-area: 'Navbar';
-}
+/* Header */
 .Header{
-    grid-area: 'Header';
+    grid-area: Header;
+    background: var(--naranja);
+    padding: 1rem;
+    display: flex;
+    justify-content: flex-end;
 }
+
+.NavList{
+    display: flex;
+}
+
+.NavList__item{
+    list-style: none;
+    margin: 0 1rem;
+}
+
+.NavList__link{
+    text-decoration: none;
+    color: var(--blanco);
+    font-weight: bolder;
+}
+
+.Language{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.Language__link{
+    border-radius: 100%;
+    border: 1px solid var(--blanco);
+    color: var(--blanco);
+    text-decoration: none;
+    font-weight: bolder;
+    padding: .5rem .4rem;
+}
+
+.Language__link:hover{
+    color: var(--naranja);
+    background: var(--blanco);
+}
+
+.Search{
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+}
+
+.Search__input{
+    height: 30px;
+    /* width: 250px; */
+    width: 0px;
+    visibility: hidden;
+    background: var(--orange);
+    border: 1px solid var(--blanco);
+    padding: .5rem;
+    color: var(--blanco);
+    font-weight: 600;
+    transition: var(--transition);
+}
+.Search__input:active, 
+.Search__input:focus{
+    background: var(--blanco);
+    color: var(--grisOscuro);
+}
+
+.Search__active{
+    visibility: visible;
+    width: 250px;
+    animation: SearchAnimation 300ms;
+}
+
+.SearchBtn__hide{
+    display: none;
+    transition: var(--transition);
+}
+
+@keyframes SearchAnimation {
+    from {
+        width: 0px;
+    } to {
+        width: 250px;
+    }
+}
+
+.Search__btn{
+    width: 30px;
+    height: 30px;
+    background: none;
+    color: var(--blanco);
+    font-size: 1.5rem;
+    border: 1px 0px 1px 1px solid var(--blanco);
+    cursor: pointer;
+}
+
+/* Navbar */
+.Navbar{
+    grid-area: Navbar;
+    position: fixed;
+    width: 6rem;
+    height: 100%;
+    background: var(--blanco);
+    box-shadow: 3px 0px 3px rgba(0,0,0,.4);
+    padding: 1rem .3rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+.Navbar__logo{
+    margin-bottom: 1.5rem;
+}
+.Navbar__logo__img{
+    width: 80px;
+    text-align: center;
+}
+
+.Navbar__list{
+    padding: 0;
+    margin: 0;
+}
+
+.Navbar__item{
+    margin-bottom: .1rem 0;
+    list-style: none;
+    text-align: center;
+    padding:  0;
+    color: var(--naranja);
+    transition: var(--transition);
+    border-bottom: 1px solid var(--grisOscuro);
+}
+.Navbar__item:hover{
+    background: var(--grisOscuro);
+    color: var(--blanco);
+}
+
+.Navbar__item:hover .Navbar__link{
+    background: var(--grisOscuro);
+    color: var(--blanco);
+}
+
+.Navbar__link{
+    text-decoration: none;
+    color: var(--naranja);
+    transition: var(--transition);
+}
+.Navbar__link:hover{
+    color: var(--blanco);
+}
+
+.Navbar__link__icon{
+    padding: 1rem;
+    font-size: 1.6rem;
+}
+
 .Main{
-    grid-area: 'Main';
+    grid-area: Main;
+}
+.Sidebar{
+    grid-area: Sidebar;
 }
 .Footer{
-    grid-area: 'Footer';
+    grid-area: Footer;
 }
 
 
