@@ -11,6 +11,8 @@
     <link rel="stylesheet" href="css/responsive.css">
     <!-- Icons -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Work+Sans:300,400,700" rel="stylesheet"> 
 </head>
 <body>
     <div class="Wrapper">
@@ -103,57 +105,55 @@
 
         <!-- Footer -->
         <footer class="Footer">
-            <!-- Widget -->
-            <div class="Widget">
-                <img src="http://ximg.es/200x100/000/fff" alt="" class="Widget__img">
-                 <ul class="Widget__list">
-                    <li class="Widget__item">
-                        <a href="#" class="Widget__link">Oficina: 131231231231</a>
+            <!-- WidgetFooter -->
+            <div class="WidgetFooter">
+                <img src="img/logo-blanco-ja.png" alt="" class="WidgetFooter__img">
+                <h3 class="WidgetFooter__title">Oficina en Bogotá:</h3>
+                <ul class="WidgetFooter__list">
+                    <li class="WidgetFooter__item">
+                        <a href="#" class="WidgetFooter__link">Carrera 26b # 4A - 4 Torre KLM 7 piso</a>
                     </li>
-                    <li class="Widget__item">
-                        <a href="#" class="Widget__link">Oficina: 131231231231</a>
+                    <li class="WidgetFooter__item">
+                        <a href="#" class="WidgetFooter__link">Conmutador: +57 1 7477720 - Móvil: +57 320 851 83 83</a>
                     </li>
-                    <li class="Widget__item">
-                        <a href="#" class="Widget__link">Oficina: 131231231231</a>
-                    </li>
-                    <li class="Widget__item">
-                        <a href="#" class="Widget__link">Oficina: 131231231231</a>
+                    <li class="WidgetFooter__item">
+                        <a href="#" class="WidgetFooter__link">info@ja-a.co</a>
                     </li>
                 </ul>
             </div>
-            <!-- Widget -->
-            <div class="Widget">
-                <h3 class="Widget__title">Oficinas</h3>
-                <ul class="Widget__list">
-                    <li class="Widget__item">
-                        <a href="#" class="Widget__link">Oficina: 131231231231</a>
+            <!-- WidgetFooter -->
+            <div class="WidgetFooter">
+                <h3 class="WidgetFooter__title">Oficina en Medellín:</h3>
+                <ul class="WidgetFooter__list">
+                    <li class="WidgetFooter__item">
+                        <a href="#" class="WidgetFooter__link">Carrera 40 # 20 - 114 Oficina 826 Centro Empresarial</a>
                     </li>
-                    <li class="Widget__item">
-                        <a href="#" class="Widget__link">Oficina: 131231231231</a>
+                    <li class="WidgetFooter__item">
+                        <a href="#" class="WidgetFooter__link">Ciudad de Río - Torre 2</a>
                     </li>
-                    <li class="Widget__item">
-                        <a href="#" class="Widget__link">Oficina: 131231231231</a>
+                    <li class="WidgetFooter__item">
+                        <a href="#" class="WidgetFooter__link">Conmutador: +57 4 2353526</a>
                     </li>
-                    <li class="Widget__item">
-                        <a href="#" class="Widget__link">Oficina: 131231231231</a>
+                    <li class="WidgetFooter__item">
+                        <a href="#" class="WidgetFooter__link">Oficina: 131231231231</a>
                     </li>
                 </ul>
             </div>
-            <!-- Widget -->
-            <div class="Widget">
-                <h3 class="Widget__title">Oficinas</h3>
-                <ul class="Widget__list">
-                    <li class="Widget__item">
-                        <a href="#" class="Widget__link">Oficina: 131231231231</a>
+            <!-- WidgetFooter -->
+            <div class="WidgetFooter">
+                <h3 class="WidgetFooter__title">Oficinas</h3>
+                <ul class="WidgetFooter__list">
+                    <li class="WidgetFooter__item">
+                        <a href="#" class="WidgetFooter__link">Oficina: 131231231231</a>
                     </li>
-                    <li class="Widget__item">
-                        <a href="#" class="Widget__link">Oficina: 131231231231</a>
+                    <li class="WidgetFooter__item">
+                        <a href="#" class="WidgetFooter__link">Oficina: 131231231231</a>
                     </li>
-                    <li class="Widget__item">
-                        <a href="#" class="Widget__link">Oficina: 131231231231</a>
+                    <li class="WidgetFooter__item">
+                        <a href="#" class="WidgetFooter__link">Oficina: 131231231231</a>
                     </li>
-                    <li class="Widget__item">
-                        <a href="#" class="Widget__link">Oficina: 131231231231</a>
+                    <li class="WidgetFooter__item">
+                        <a href="#" class="WidgetFooter__link">Oficina: 131231231231</a>
                     </li>
                 </ul>
             </div>
