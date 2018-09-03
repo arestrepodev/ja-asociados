@@ -16,6 +16,92 @@
 </head>
 <body>
     <div class="Wrapper">
+        <!-- Header Mobile -->
+        <div class="Mobile__header">
+            <div class="Mobile__menu" id="js-mobileMenu">
+                <i class="Mobile__menu__icon fas fa-bars"></i>
+            </div>
+            <div class="Mobile__logo">
+                <img class="Mobile__logo__img" src="img/logo-vector-web-ja.png" alt="Logotipo">
+            </div>
+            <div class="Mobile__language">
+                <a href="#" class="Mobile__langauge__text">EN</a>
+                <form action="" class="Mobile__search">
+                    <a id="" class="Mobile__search__btn">
+                        <i class="fas fa-search Mobile__search__icon"></i>
+                    </a>
+                    <input  id="" class="Mobile__input" type="text" name="Buscar" id="Buscar">
+                </form>
+            </div>
+        </div>
+        <!-- Menu Mobile -->
+        <div class="Mobile__navbar" id="js-mobileNavbar">
+            <a id="js-closeMobileMenu" href="#" class="Mobile__navbar__close__link">
+                <i class="fas fa-chevron-left Mobile__navbar__close__icon"></i>
+            </a>
+             <ul class="Mobile__navbar__list">
+                <li class="Mobile__navbar__item">
+                    <a href="#" class="Mobile__navbar__link">
+                        <i class="Mobile__navbar__link__icon fas fa-home"></i>
+                        <span class="Mobile__navbar__text">Inicio</span>
+                    </a>
+                </li>
+                <li class="Mobile__navbar__item">
+                    <a href="#" class="Mobile__navbar__link">
+                        <i class="Mobile__navbar__link__icon fas fa-sun"></i>
+                        <span class="Mobile__navbar__text">Nuestra razón</span>
+                    </a>
+                    <ul class="Mobile__navbar__dropdown">
+                        <li><a href="#">¿Que es Ja?</a></li>
+                        <li><a href="#">Historia</a></li>
+                    </ul>
+                </li>
+                <li class="Mobile__navbar__item">
+                    <a href="#" class="Mobile__navbar__link">
+                        <i class="Mobile__navbar__link__icon fas fa-archive"></i>
+                        <span class="Mobile__navbar__text">Nuestra Experiencia</span>
+                    </a>
+                    <ul class="Mobile__navbar__dropdown">
+                        <li><a href="#">Iniciativas Propias</a></li>
+                        <li><a href="#">Logros destacados/a></li>
+                    </ul>
+                </li>
+                <li class="Mobile__navbar__item">
+                    <a href="#" class="Mobile__navbar__link">
+                        <i class="Mobile__navbar__link__icon fas fa-lightbulb"></i>
+                        <span class="Mobile__navbar__text">Galeria</span>
+                    </a>
+                </li>
+                <li class="Mobile__navbar__item">
+                    <a href="#" class="Mobile__navbar__link">
+                        <i class="Mobile__navbar__link__icon fas fa-users"></i>
+                        <span class="Mobile__navbar__text">Equipo</span>
+                    </a>
+                    <ul>
+                        <li><a href="#">Asi Funcionamos</a></li>
+                    </ul>
+                </li>
+                <li class="Mobile__navbar__item">
+                    <a href="#" class="Mobile__navbar__link">
+                        <i class="Mobile__navbar__link__icon fas fa-handshake"></i>
+                        <span class="Mobile__navbar__text">Aliados</span>
+                    </a>
+                </li>
+                <li class="Mobile__navbar__item">
+                    <a href="#" class="Mobile__navbar__link">
+                        <i class="Mobile__navbar__link__icon fas fa-book-open"></i>
+                        <span class="Mobile__navbar__text">Publicaciones</span>
+                    </a>
+                </li>
+                <li class="Mobile__navbar__item">
+                    <a href="#" class="Mobile__navbar__link">
+                        <i class="Mobile__navbar__link__icon fas fa-lock"></i>
+                        <span class="Mobile__navbar__text">Políticas de Privacidad</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
         <!-- Header -->
         <header class="Header">
             <!-- NavList Header -->
@@ -34,10 +120,10 @@
            
             <!-- Search -->
             <form action="" class="Search">
-                <a id="SearchBtn" class="Search__btn">
+                <a id="js-searchBtn" class="Search__btn">
                     <i class="fas fa-search Search__icon"></i>
                 </a>
-                <input  id="SearchInput" class="Search__input" type="text" name="Buscar" id="Buscar">
+                <input  id="js-searchInput" class="Search__input" type="text" name="Buscar" id="Buscar">
             </form>
         </header>
 
@@ -91,6 +177,7 @@
                 </li>
             </ul>
         </nav>
+
         
         <!-- Main -->
         <main class="Main">
@@ -107,7 +194,7 @@
         <footer class="Footer">
             <!-- WidgetFooter -->
             <div class="WidgetFooter">
-                <img src="img/logo-blanco-ja.png" alt="" class="WidgetFooter__img">
+                <img src="img/logo-blanco-ja.png" alt="" class="WidgetFooter__logo">
                 <h3 class="WidgetFooter__title">Oficina en Bogotá:</h3>
                 <ul class="WidgetFooter__list">
                     <li class="WidgetFooter__item">
@@ -140,22 +227,31 @@
                 </ul>
             </div>
             <!-- WidgetFooter -->
-            <div class="WidgetFooter">
-                <h3 class="WidgetFooter__title">Oficinas</h3>
-                <ul class="WidgetFooter__list">
-                    <li class="WidgetFooter__item">
-                        <a href="#" class="WidgetFooter__link">Oficina: 131231231231</a>
+            <div class="WidgetFooterSocial">
+                <h3 class="WidgetFooterSocial__title">Oficinas</h3>
+                <ul class="WidgetFooterSocial__list">
+                    <li class="WidgetFooterSocial__item">
+                        <a href="#" class="WidgetFooterSocial__link">
+                            <img class="WidgetFooterSocial__img" class="WidgetFooterSocial__img" src="img/icons/facebook.svg" alt="">
+                        </a>
                     </li>
-                    <li class="WidgetFooter__item">
-                        <a href="#" class="WidgetFooter__link">Oficina: 131231231231</a>
+                    <li class="WidgetFooterSocial__item">
+                        <a href="#" class="WidgetFooterSocial__link">
+                            <img class="WidgetFooterSocial__img ml-1" class="WidgetFooterSocial__img" src="img/icons/twitter.svg" alt="">
+                        </a>
                     </li>
-                    <li class="WidgetFooter__item">
-                        <a href="#" class="WidgetFooter__link">Oficina: 131231231231</a>
+                    <li class="WidgetFooterSocial__item">
+                        <a href="#" class="WidgetFooterSocial__link">
+                            <img class="WidgetFooterSocial__img ml-1" class="WidgetFooterSocial__img" src="img/icons/linkedin.svg" alt="">
+                        </a>
                     </li>
-                    <li class="WidgetFooter__item">
-                        <a href="#" class="WidgetFooter__link">Oficina: 131231231231</a>
+                    <li class="WidgetFooterSocial__item">
+                        <a href="#" class="WidgetFooterSocial__link">
+                            <img class="WidgetFooterSocial__img ml-1" class="WidgetFooterSocial__img" src="img/icons/youtube.svg" alt="">
+                        </a>
                     </li>
                 </ul>
+                <p class="Copyright">&copy; 2018* - Todos los derechos reservados.</p>
             </div>
         </footer>
 
