@@ -42,60 +42,60 @@
              <ul class="Mobile__navbar__list">
                 <li class="Mobile__navbar__item">
                     <a href="#" class="Mobile__navbar__link">
-                        <i class="Mobile__navbar__link__icon fas fa-home"></i>
+                        <i class="Mobile__navbar__icon fas fa-home"></i>
                         <span class="Mobile__navbar__text">Inicio</span>
                     </a>
                 </li>
                 <li class="Mobile__navbar__item">
                     <a href="#" class="Mobile__navbar__link">
-                        <i class="Mobile__navbar__link__icon fas fa-sun"></i>
+                        <i class="Mobile__navbar__icon fas fa-sun"></i>
                         <span class="Mobile__navbar__text">Nuestra razón</span>
                     </a>
-                    <ul class="Mobile__navbar__dropdown">
-                        <li><a href="#">¿Que es Ja?</a></li>
-                        <li><a href="#">Historia</a></li>
+                    <ul class="Mobile__dropdown">
+                        <li class="Mobile__dropdown__item"><a href="#" class="Mobile__dropdown__link">¿Que es Ja?</a></li>
+                        <li class="Mobile__dropdown__item"><a href="#" class="Mobile__dropdown__link">Historia</a></li>
                     </ul>
                 </li>
                 <li class="Mobile__navbar__item">
                     <a href="#" class="Mobile__navbar__link">
-                        <i class="Mobile__navbar__link__icon fas fa-archive"></i>
+                        <i class="Mobile__navbar__icon fas fa-archive"></i>
                         <span class="Mobile__navbar__text">Nuestra Experiencia</span>
                     </a>
-                    <ul class="Mobile__navbar__dropdown">
-                        <li><a href="#">Iniciativas Propias</a></li>
-                        <li><a href="#">Logros destacados/a></li>
+                    <ul class="Mobile__dropdown">
+                        <li class="Mobile__dropdown__item"><a href="#" class="Mobile__dropdown__link">Iniciativas Propias</a></li>
+                        <li class="Mobile__dropdown__item"><a href="#" class="Mobile__dropdown__link">Logros destacados</a></li>
                     </ul>
                 </li>
                 <li class="Mobile__navbar__item">
                     <a href="#" class="Mobile__navbar__link">
-                        <i class="Mobile__navbar__link__icon fas fa-lightbulb"></i>
+                        <i class="Mobile__navbar__icon fas fa-lightbulb"></i>
                         <span class="Mobile__navbar__text">Galeria</span>
                     </a>
                 </li>
                 <li class="Mobile__navbar__item">
                     <a href="#" class="Mobile__navbar__link">
-                        <i class="Mobile__navbar__link__icon fas fa-users"></i>
+                        <i class="Mobile__navbar__icon fas fa-users"></i>
                         <span class="Mobile__navbar__text">Equipo</span>
                     </a>
-                    <ul>
-                        <li><a href="#">Asi Funcionamos</a></li>
+                    <ul class="Mobile__dropdown">
+                        <li class="Mobile__dropdown__item"><a href="#" class="Mobile__dropdown__link">Asi Funcionamos</a></li>
                     </ul>
                 </li>
                 <li class="Mobile__navbar__item">
                     <a href="#" class="Mobile__navbar__link">
-                        <i class="Mobile__navbar__link__icon fas fa-handshake"></i>
+                        <i class="Mobile__navbar__icon fas fa-handshake"></i>
                         <span class="Mobile__navbar__text">Aliados</span>
                     </a>
                 </li>
                 <li class="Mobile__navbar__item">
                     <a href="#" class="Mobile__navbar__link">
-                        <i class="Mobile__navbar__link__icon fas fa-book-open"></i>
+                        <i class="Mobile__navbar__icon fas fa-book-open"></i>
                         <span class="Mobile__navbar__text">Publicaciones</span>
                     </a>
                 </li>
                 <li class="Mobile__navbar__item">
                     <a href="#" class="Mobile__navbar__link">
-                        <i class="Mobile__navbar__link__icon fas fa-lock"></i>
+                        <i class="Mobile__navbar__icon fas fa-lock"></i>
                         <span class="Mobile__navbar__text">Políticas de Privacidad</span>
                     </a>
                 </li>

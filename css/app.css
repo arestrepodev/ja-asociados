@@ -421,6 +421,41 @@ h1,h2,h3,h4,h5,h6{
         font-size: 1.5rem;
     }
 
+    .Mobile__navbar__list{
+        list-style: none;
+        padding: 0 1rem; 
+    }
+    .Mobile__navbar__item{
+        padding: .5rem 0;
+    }
+    .Mobile__navbar__link{
+        /* padding: 1rem 0; */
+        text-decoration: none;
+    }
+    .Mobile__navbar__icon{
+        color: var(--naranja);
+        font-size: 1.8rem;
+        width: 2rem;
+        text-align: center;
+        border-bottom: 1px solid var(--grisOscuro);
+        padding-bottom: .5rem
+    }
+    .Mobile__navbar__text{
+        color: var(--grisOscuro);
+        font-weight: bolder;
+        margin-left: .5rem;
+    }
+
+    .Mobile__dropdown{
+        list-style: none;
+        margin: .5rem 0;
+    }
+    .Mobile__dropdown__item{}
+    .Mobile__dropdown__link{
+        color: var(--grisOscuro);
+        text-decoration: none;
+    }
+
     .js-menuActive{
         transform: translateX(0px);
     }
