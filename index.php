@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="css/responsive.css">
     <link rel="stylesheet" href="css/responsive.css">
     <!-- Icons -->
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+    <link rel="stylesheet" href="fonts/style.css">
     <!-- Fonts -->
     <link href="https://fonts.googleapis.com/css?family=Work+Sans:300,400,700" rel="stylesheet"> 
 </head>
@@ -19,7 +19,7 @@
         <!-- Header Mobile -->
         <div class="Mobile__header">
             <div class="Mobile__menu" id="js-mobileMenu">
-                <i class="Mobile__menu__icon fas fa-bars"></i>
+                <i class="icon-menu Mobile__menu__icon"></i>
             </div>
             <div class="Mobile__logo">
                 <img class="Mobile__logo__img" src="img/logo-vector-web-ja.png" alt="Logotipo">
@@ -37,65 +37,80 @@
         <!-- Menu Mobile -->
         <div class="Mobile__navbar" id="js-mobileNavbar">
             <a id="js-closeMobileMenu" href="#" class="Mobile__navbar__close__link">
-                <i class="fas fa-chevron-left Mobile__navbar__close__icon"></i>
+                <i class="icon icon-circle-left Mobile__navbar__close__icon"></i>
             </a>
              <ul class="Mobile__navbar__list">
                 <li class="Mobile__navbar__item">
                     <a href="#" class="Mobile__navbar__link">
-                        <i class="Mobile__navbar__icon fas fa-home"></i>
+                        <i class="Mobile__navbar__icon icon-home"></i>
                         <span class="Mobile__navbar__text">Inicio</span>
                     </a>
                 </li>
                 <li class="Mobile__navbar__item">
                     <a href="#" class="Mobile__navbar__link">
-                        <i class="Mobile__navbar__icon fas fa-sun"></i>
+                        <i class="Mobile__navbar__icon icon-sun"></i>
                         <span class="Mobile__navbar__text">Nuestra razón</span>
                     </a>
                     <ul class="Mobile__dropdown">
-                        <li class="Mobile__dropdown__item"><a href="#" class="Mobile__dropdown__link">¿Que es Ja?</a></li>
-                        <li class="Mobile__dropdown__item"><a href="#" class="Mobile__dropdown__link">Historia</a></li>
+                        <li class="Mobile__dropdown__item">
+                            <i class="icon-circle-right Mobile__dropdwon__icon"></i>
+                            <a href="#" class="Mobile__dropdown__link">¿Que es Ja?</a>
+                        </li>
+                        <li class="Mobile__dropdown__item">
+                            <i class="icon-circle-right Mobile__dropdwon__icon"></i>
+                            <a href="#" class="Mobile__dropdown__link">Historia</a>
+                        </li>
                     </ul>
                 </li>
                 <li class="Mobile__navbar__item">
                     <a href="#" class="Mobile__navbar__link">
-                        <i class="Mobile__navbar__icon fas fa-archive"></i>
+                        <i class="Mobile__navbar__icon icon-folder"></i>
                         <span class="Mobile__navbar__text">Nuestra Experiencia</span>
                     </a>
                     <ul class="Mobile__dropdown">
-                        <li class="Mobile__dropdown__item"><a href="#" class="Mobile__dropdown__link">Iniciativas Propias</a></li>
-                        <li class="Mobile__dropdown__item"><a href="#" class="Mobile__dropdown__link">Logros destacados</a></li>
+                        <li class="Mobile__dropdown__item">
+                            <i class="icon-circle-right Mobile__dropdwon__icon"></i>                            
+                            <a href="#" class="Mobile__dropdown__link">Iniciativas Propias</a>
+                        </li>
+                        <li class="Mobile__dropdown__item">
+                            <i class="icon-circle-right Mobile__dropdwon__icon"></i>
+                            <a href="#" class="Mobile__dropdown__link">Logros destacados</a>
+                        </li>
                     </ul>
                 </li>
                 <li class="Mobile__navbar__item">
                     <a href="#" class="Mobile__navbar__link">
-                        <i class="Mobile__navbar__icon fas fa-lightbulb"></i>
+                        <i class="Mobile__navbar__icon icon-image"></i>
                         <span class="Mobile__navbar__text">Galeria</span>
                     </a>
                 </li>
                 <li class="Mobile__navbar__item">
                     <a href="#" class="Mobile__navbar__link">
-                        <i class="Mobile__navbar__icon fas fa-users"></i>
+                        <i class="Mobile__navbar__icon icon-users"></i>
                         <span class="Mobile__navbar__text">Equipo</span>
                     </a>
                     <ul class="Mobile__dropdown">
-                        <li class="Mobile__dropdown__item"><a href="#" class="Mobile__dropdown__link">Asi Funcionamos</a></li>
+                        <li class="Mobile__dropdown__item">
+                            <i class="icon-circle-right Mobile__dropdwon__icon"></i>                        
+                            <a href="#" class="Mobile__dropdown__link">Asi Funcionamos</a>
+                        </li>
                     </ul>
                 </li>
                 <li class="Mobile__navbar__item">
                     <a href="#" class="Mobile__navbar__link">
-                        <i class="Mobile__navbar__icon fas fa-handshake"></i>
+                        <i class="Mobile__navbar__icon icon-books"></i>
                         <span class="Mobile__navbar__text">Aliados</span>
                     </a>
                 </li>
                 <li class="Mobile__navbar__item">
                     <a href="#" class="Mobile__navbar__link">
-                        <i class="Mobile__navbar__icon fas fa-book-open"></i>
+                        <i class="Mobile__navbar__icon fas icon-file-empty"></i>
                         <span class="Mobile__navbar__text">Publicaciones</span>
                     </a>
                 </li>
                 <li class="Mobile__navbar__item">
                     <a href="#" class="Mobile__navbar__link">
-                        <i class="Mobile__navbar__icon fas fa-lock"></i>
+                        <i class="Mobile__navbar__icon icon-lock"></i>
                         <span class="Mobile__navbar__text">Políticas de Privacidad</span>
                     </a>
                 </li>
@@ -137,42 +152,42 @@
             <ul class="Navbar__list">
                 <li class="Navbar__item">
                     <a href="#" class="Navbar__link">
-                        <i class="Navbar__link__icon fas fa-home"></i>
+                        <i class="Navbar__link__icon icon-home"></i>
                     </a>
                 </li>
                 <li class="Navbar__item">
                     <a href="#" class="Navbar__link">
-                        <i class="Navbar__link__icon fas fa-sun"></i>
+                        <i class="Navbar__link__icon icon-sun"></i>
                     </a>
                 </li>
                 <li class="Navbar__item">
                     <a href="#" class="Navbar__link">
-                        <i class="Navbar__link__icon fas fa-archive"></i>
+                        <i class="Navbar__link__icon icon-folder"></i>
                     </a>
                 </li>
                 <li class="Navbar__item">
                     <a href="#" class="Navbar__link">
-                        <i class="Navbar__link__icon fas fa-lightbulb"></i>
+                        <i class="Navbar__link__icon icon-image"></i>
                     </a>
                 </li>
                 <li class="Navbar__item">
                     <a href="#" class="Navbar__link">
-                        <i class="Navbar__link__icon fas fa-users"></i>
+                        <i class="Navbar__link__icon icon-users"></i>
                     </a>
                 </li>
                 <li class="Navbar__item">
                     <a href="#" class="Navbar__link">
-                        <i class="Navbar__link__icon fas fa-handshake"></i>
+                        <i class="Navbar__link__icon icon-books"></i>
                     </a>
                 </li>
                 <li class="Navbar__item">
                     <a href="#" class="Navbar__link">
-                        <i class="Navbar__link__icon fas fa-book-open"></i>
+                        <i class="Navbar__link__icon fas icon-file-empty"></i>
                     </a>
                 </li>
                 <li class="Navbar__item">
                     <a href="#" class="Navbar__link">
-                        <i class="Navbar__link__icon fas fa-lock"></i>
+                        <i class="Navbar__link__icon icon-lock"></i>
                     </a>
                 </li>
             </ul>

@@ -271,6 +271,7 @@ h1,h2,h3,h4,h5,h6{
 .Navbar__link__icon{
     padding: 1rem;
     font-size: 1.6rem;
+    display: block;
 }
 
 /* Main */
@@ -415,6 +416,7 @@ h1,h2,h3,h4,h5,h6{
     }
     .Mobile__navbar__close__link{
         padding: 1rem;
+        text-decoration: none;
     }
     .Mobile__navbar__close__icon{
         color: var(--naranja);
@@ -431,6 +433,7 @@ h1,h2,h3,h4,h5,h6{
     .Mobile__navbar__link{
         /* padding: 1rem 0; */
         text-decoration: none;
+        display: block;
     }
     .Mobile__navbar__icon{
         color: var(--naranja);
@@ -450,7 +453,12 @@ h1,h2,h3,h4,h5,h6{
         list-style: none;
         margin: .5rem 0;
     }
-    .Mobile__dropdown__item{}
+    .Mobile__dropdown__item{
+        padding: .5rem 0;
+    }
+    .Mobile__dropdwon__icon{
+        color: var(--naranja);
+    }
     .Mobile__dropdown__link{
         color: var(--grisOscuro);
         text-decoration: none;
