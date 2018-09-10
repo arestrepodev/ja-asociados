@@ -39,7 +39,19 @@
                 <i class="icon icon-circle-left Mobile__navbar__close__icon"></i>
             </a>
             
-            
+            <!-- Menu WordPress -->
+            <?php 
+                wp_nav_menu(
+                    array(
+                        'container' => false,
+                        'items_wrap' => '<ul id="" class="Mobile__navbar__list">%3$s</ul>',
+                        'theme_location' => 'mobile',
+                        'container_class' => 'Mobile__navbar__list',
+                        'link_before' => '<i class="Mobile__navbar__icon"></i><span class="Mobile__navbar__text">',
+                        'link_after' => '</span'
+                    )
+                );
+            ?>
             <ul class="Mobile__navbar__list">
                 <li class="Mobile__navbar__item">
                     <a href="#" class="Mobile__navbar__link">
