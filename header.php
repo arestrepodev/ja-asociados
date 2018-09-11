@@ -11,7 +11,9 @@
     <!-- Icons -->
     <link rel="stylesheet" href="<?php bloginfo('template_url');?>/fonts/style.css">
     <!-- Fonts -->
-    <link href="https://fonts.googleapis.com/css?family=Work+Sans:300,400,700" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css?family=Work+Sans:300,400,700" rel="stylesheet">
+    
+    <?php wp_head();?>
 </head>
 <body class="Wrapper">
     

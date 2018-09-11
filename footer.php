@@ -67,5 +67,6 @@
 
     <!-- Scripts -->
     <script src="<?php bloginfo('template_url');?>/js/app.js"></script>
+    <?php wp_footer();?>
 </body>
 </html>
