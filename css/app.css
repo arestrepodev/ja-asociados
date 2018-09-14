@@ -416,6 +416,7 @@ h1,h2,h3,h4,h5,h6{
         align-items: flex-start;
         transition: all 200ms ease-in;
         transform: translateX(-300px);
+        z-index: 5000;
     }
     .Mobile__navbar__close__link{
         padding: 1rem;
