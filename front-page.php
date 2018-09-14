@@ -2,13 +2,9 @@
         
     <!-- Main -->
     <main class="Main">
-        <!-- Content -->
+        <!-- Slider -->
             <?php if (have_posts()) : while (have_posts()) : the_post(); ?> <div class="entry"> <?php the_content(); ?> </div><!-- entry --> <?php endwhile; ?> <?php endif; ?>
-        <!-- Content -->
+        <!-- Slider -->
     </main>
-    <?php get_sidebar(); ?>
 
 <?php get_footer(); ?>
-
-
-     

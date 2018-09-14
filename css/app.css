@@ -108,7 +108,7 @@ h1,h2,h3,h4,h5,h6{
     grid-template-rows: 80px auto 300px;
     grid-template-areas: 
         'Navbar Header Header Header Header Header'
-        'Navbar Main Main Main Sidebar Sidebar '
+        'Navbar Main Main Main Main Main '
         'Navbar Footer Footer Footer Footer Footer';
 }
 
