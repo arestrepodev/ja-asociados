@@ -23,7 +23,7 @@
                 <i class="icon-menu Mobile__menu__icon"></i>
             </div>
             <div class="Mobile__logo">
-                <img class="Mobile__logo__img" src="img/logo-vector-web-ja.png" alt="Logotipo">
+                <img class="Mobile__logo__img" src="<?php bloginfo('template_url')?>/img/logo-vector-web-ja.png" alt="Logotipo">
             </div>
             <div class="Mobile__language">
                 <a href="#" class="Mobile__langauge__text">EN</a>
@@ -49,12 +49,12 @@
                         'items_wrap' => '<ul id="" class="Mobile__navbar__list">%3$s</ul>',
                         'theme_location' => 'mobile',
                         'container_class' => 'Mobile__navbar__list',
-                        'link_before' => '<i class="Mobile__navbar__icon"></i><span class="Mobile__navbar__text">',
+                        'link_before' => '<span class="">',
                         'link_after' => '</span'
                     )
                 );
             ?>
-            <ul class="Mobile__navbar__list">
+            <!-- <ul class="Mobile__navbar__list">
                 <li class="Mobile__navbar__item">
                     <a href="#" class="Mobile__navbar__link">
                         <i class="Mobile__navbar__icon icon-home"></i>
@@ -129,19 +129,23 @@
                         <span class="Mobile__navbar__text">Políticas de Privacidad</span>
                     </a>
                 </li>
-            </ul>
+            </ul> -->
         </div>
 
         <!-- Header -->
         <header class="Header">
             <!-- NavList Header -->
+            <?php
+                wp_nav_menu(
+                    array(
+                        'container' => false,
+                        'items_wrap' => '<ul id="" class="NavList">%3$s</ul>',
+                        'theme_location' => 'menu',
+                        'container_class' => 'NavList'
+                    )
+                )
+            ?>
             <ul class="NavList">
-                <li class="NavList__item">
-                    <a href="#" class="NavList__link">Contáctenos</a>
-                    </li>
-                <li class="NavList__item">
-                    <a href="#" class="NavList__link">Únete al equipo JA&A</a>
-                </li>
                 <!-- Language -->
                 <li class="NavList__item Language">
                     <a href="#" class="NavList__link Language__link">EN</a>
@@ -160,8 +164,8 @@
          <!-- Navbar Left -->
         <nav class="Navbar">
             <div class="Navbar__logo">
-                <a class="Navbar__logo__link" href="#">
-                    <img class="Navbar__logo__img" src="img/logo-vector-web-ja.png" alt="Logotipo">
+                <a class="Navbar__logo__link" href="<?php echo get_home_url(); ?>">
+                    <img class="Navbar__logo__img" src="<?php bloginfo('template_url')?>/img/logo-vector-web-ja.png" alt="Logotipo">
                 </a>
             </div>
             <ul class="Navbar__list">

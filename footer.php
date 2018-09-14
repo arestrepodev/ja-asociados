@@ -1,8 +1,11 @@
    <!-- Footer -->
         <footer class="Footer">
+            <?php if (!function_exists('dynamic_sidebar') || !dynamic_sidebar('Footer1')) : endif; ?>
+            <?php if (!function_exists('dynamic_sidebar') || !dynamic_sidebar('Footer2')) : endif; ?>
+            <?php if (!function_exists('dynamic_sidebar') || !dynamic_sidebar('Footer3')) : endif; ?>
             <!-- WidgetFooter -->
-            <div class="WidgetFooter">
-                <img src="img/logo-blanco-ja.png" alt="" class="WidgetFooter__logo">
+            <!-- <div class="WidgetFooter">
+                <img src="<?php bloginfo('template_url')?>/img/logo-blanco-ja.png" alt="" class="WidgetFooter__logo">
                 <h3 class="WidgetFooter__title">Oficina en Bogotá:</h3>
                 <ul class="WidgetFooter__list">
                     <li class="WidgetFooter__item">
@@ -15,9 +18,9 @@
                         <a href="#" class="WidgetFooter__link">info@ja-a.co</a>
                     </li>
                 </ul>
-            </div>
+            </div> -->
             <!-- WidgetFooter -->
-            <div class="WidgetFooter">
+            <!-- <div class="WidgetFooter">
                 <h3 class="WidgetFooter__title">Oficina en Medellín:</h3>
                 <ul class="WidgetFooter__list">
                     <li class="WidgetFooter__item">
@@ -33,9 +36,9 @@
                         <a href="#" class="WidgetFooter__link">Oficina: 131231231231</a>
                     </li>
                 </ul>
-            </div>
+            </div> -->
             <!-- WidgetFooter -->
-            <div class="WidgetFooterSocial">
+            <!-- <div class="WidgetFooterSocial">
                 <h3 class="WidgetFooterSocial__title">Oficinas</h3>
                 <ul class="WidgetFooterSocial__list">
                     <li class="WidgetFooterSocial__item">
@@ -58,7 +61,7 @@
                             <img class="WidgetFooterSocial__img ml-1" class="WidgetFooterSocial__img" src="img/icons/youtube.svg" alt="">
                         </a>
                     </li>
-                </ul>
+                </ul> -->
                 <p class="Copyright">&copy; 2018* - Todos los derechos reservados.</p>
             </div>
         </footer>

@@ -9,3 +9,28 @@
     }
 
     add_action('init', 'register_all_menus');
+
+    // Register Widgets
+    register_sidebar(array(
+        'name' => 'Footer1',
+        'before_widget' => '<div class="WidgetFooter">',
+        'after_widget' => '</div>',
+        'before_title' => '<h3 class="WidgetFooter__title">',
+        'after_title' => '</h3>'
+    ));
+
+    register_sidebar(array(
+        'name' => 'Footer2',
+        'before_widget' => '<div class="WidgetFooter">',
+        'after_widget' => '</div>',
+        'before_title' => '<h3 class="WidgetFooter__title">',
+        'after_title' => '</h3>'
+    ));
+
+    register_sidebar(array(
+        'name' => 'Footer3',
+        'before_widget' => '<div class="WidgetFooter">',
+        'after_widget' => '</div>',
+        'before_title' => '<h3 class="WidgetFooter__title">',
+        'after_title' => '</h3>'
+    ));

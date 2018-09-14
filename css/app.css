@@ -104,7 +104,8 @@ h1,h2,h3,h4,h5,h6{
     padding: 0;
     display: grid;
     grid-template-columns: 6rem 1fr 1fr 1fr 1fr 1fr;
-    grid-template-rows: 80px 290px 300px;
+    /* grid-template-rows: 80px 290px 300px; */
+    grid-template-rows: 80px auto 300px;
     grid-template-areas: 
         'Navbar Header Header Header Header Header'
         'Navbar Main Main Main Sidebar Sidebar '
@@ -127,12 +128,14 @@ h1,h2,h3,h4,h5,h6{
     display: flex;
 }
 
-.NavList__item{
+.NavList__item,
+.NavList .menu-item{
     list-style: none;
     margin: 0 1rem;
 }
 
-.NavList__link{
+.NavList__link,
+.NavList .menu-item a{
     text-decoration: none;
     color: var(--blanco);
     font-weight: bolder;
@@ -427,15 +430,18 @@ h1,h2,h3,h4,h5,h6{
         list-style: none;
         padding: 0 1rem; 
     }
-    .Mobile__navbar__item{
+    .Mobile__navbar__item,
+    .menu-item{
         padding: .5rem 0;
     }
-    .Mobile__navbar__link{
+    .Mobile__navbar__link,
+    .menu-item a{
         /* padding: 1rem 0; */
         text-decoration: none;
         display: block;
     }
-    .Mobile__navbar__icon{
+    .Mobile__navbar__icon,
+    ._mi._before{
         color: var(--naranja);
         font-size: 1.8rem;
         width: 2rem;
@@ -443,25 +449,30 @@ h1,h2,h3,h4,h5,h6{
         border-bottom: 1px solid var(--grisOscuro);
         padding-bottom: .5rem
     }
-    .Mobile__navbar__text{
+    .Mobile__navbar__text,
+    .menu-item a{
         color: var(--grisOscuro);
         font-weight: bolder;
         margin-left: .5rem;
     }
 
-    .Mobile__dropdown{
+    .Mobile__dropdown,
+    .sub-menu{
         list-style: none;
         margin: .5rem 0;
     }
-    .Mobile__dropdown__item{
+    .Mobile__dropdown__item,
+    .sub-menu .menu-item{
         padding: .5rem 0;
     }
     .Mobile__dropdwon__icon{
         color: var(--naranja);
     }
-    .Mobile__dropdown__link{
+    .Mobile__dropdown__link,
+    .sub-menu .menu-item a{
         color: var(--grisOscuro);
         text-decoration: none;
+        font-weight: normal;
     }
 
     .js-menuActive{
