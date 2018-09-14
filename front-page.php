@@ -2,14 +2,9 @@
         
     <!-- Main -->
     <main class="Main">
-        <!-- Slider -->
-            <?php
-                $page = get_page_by_title( 'page-name' );
-                $content = apply_filters('the_content', $page->post_content); 
-                echo $content;
-            ?>
-            <?php include (TEMPLATEPATH. '/example.php')?>
-        <!-- Slider -->
+        <!-- Content -->
+            <?php if (have_posts()) : while (have_posts()) : the_post(); ?> <div class="entry"> <?php the_content(); ?> </div><!-- entry --> <?php endwhile; ?> <?php endif; ?>
+        <!-- Content -->
     </main>
     <?php get_sidebar(); ?>
 
