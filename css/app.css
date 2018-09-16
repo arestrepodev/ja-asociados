@@ -97,7 +97,7 @@ h1,h2,h3,h4,h5,h6{
     font-family: Arial, Helvetica, sans-serif;
 }
 
-
+/* Wrapper out Sidebar */
 .Wrapper{
     width: 100%;
     margin: 0;
@@ -109,6 +109,13 @@ h1,h2,h3,h4,h5,h6{
     grid-template-areas: 
         'Navbar Header Header Header Header Header'
         'Navbar Main Main Main Main Main '
+        'Navbar Footer Footer Footer Footer Footer';
+}
+
+.is--Sidebar{
+    grid-template-areas:
+        'Navbar Header Header Header Header Header'
+        'Navbar Main Main Main Sidebar Sidebar '
         'Navbar Footer Footer Footer Footer Footer';
 }
 
@@ -353,7 +360,8 @@ h1,h2,h3,h4,h5,h6{
             'Footer';
     }
     .Header, 
-    .Navbar {
+    .Navbar,
+    .Sidebar {
         display: none;
     }
 

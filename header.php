@@ -15,7 +15,7 @@
     
     <?php wp_head();?>
 </head>
-<body class="Wrapper">
+<body <?php body_class('Wrapper'); ?>>
     
         <!-- Header Mobile -->
         <div class="Mobile__header">
