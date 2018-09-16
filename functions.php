@@ -34,3 +34,9 @@
         'before_title' => '<h3 class="WidgetFooter__title">',
         'after_title' => '</h3>'
     ));
+
+    register_sidebar(array(
+        'name' => 'Copyright',
+        'before_widget' => '<div class="Copyright">',
+        'after_widget' => '</div>'
+    ));

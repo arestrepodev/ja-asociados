@@ -62,7 +62,8 @@
                         </a>
                     </li>
                 </ul> -->
-                <p class="Copyright">&copy; 2018* - Todos los derechos reservados.</p>
+                <?php if (!function_exists('dynamic_sidebar') || !dynamic_sidebar('Copyright')) : endif;?>
+                <!-- <p class="Copyright">&copy; 2018* - Todos los derechos reservados.</p> -->
             </div>
         </footer>
 
