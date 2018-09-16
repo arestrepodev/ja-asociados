@@ -157,7 +157,7 @@
             <!-- Search -->
             <form action="" class="Search">
                 <a id="js-searchBtn" class="Search__btn">
-                    <i class="fas fa-search Search__icon"></i>
+                    <i class="icon-search Search__icon"></i>
                 </a>
                 <input  id="js-searchInput" class="Search__input" type="text" name="Buscar" id="Buscar">
             </form>
