@@ -4,7 +4,8 @@
     function register_all_menus() {
         register_nav_menus(array(
             'menu' => __('Menu Superior'),
-            'mobile' => __('Menu Móvil')
+            'mobile' => __('Menu Móvil'),
+            'menuLeft' => __('Menu Izquierdo')
         ));
     }
 

@@ -68,8 +68,10 @@
                     </a>
                     <ul class="Mobile__dropdown">
                         <li class="Mobile__dropdown__item">
-                            <i class="icon-circle-right Mobile__dropdwon__icon"></i>
-                            <a href="#" class="Mobile__dropdown__link">¿Que es Ja?</a>
+                            <a href="#" class="Mobile__dropdown__link">
+                                <i class="icon-circle-right Mobile__dropdwon__icon"></i>
+                                ¿Que es Ja?
+                            </a>
                         </li>
                         <li class="Mobile__dropdown__item">
                             <i class="icon-circle-right Mobile__dropdwon__icon"></i>
@@ -168,7 +170,15 @@
                     <img class="Navbar__logo__img" src="<?php bloginfo('template_url')?>/img/logo-vector-web-ja.png" alt="Logotipo">
                 </a>
             </div>
-            <ul class="Navbar__list">
+            <?php 
+                wp_nav_menu(array(
+                    'container' => false,
+                    'items_wrap' => '<ul id="" class="Navbar__list">%3$s</ul>',
+                    'theme_location' => 'menuLeft',
+                    'container_class' => 'Navbar__list'
+                ));
+            ?>
+            <!-- <ul class="Navbar__list">
                 <li class="Navbar__item">
                     <a href="#" class="Navbar__link">
                         <i class="Navbar__link__icon icon-home"></i>
@@ -209,5 +219,5 @@
                         <i class="Navbar__link__icon icon-lock"></i>
                     </a>
                 </li>
-            </ul>
+            </ul> -->
         </nav>
