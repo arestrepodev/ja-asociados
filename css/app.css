@@ -225,6 +225,7 @@ h1,h2,h3,h4,h5,h6{
 .Navbar{
     grid-area: Navbar;
     position: fixed;
+    z-index: 5000;
     width: 6rem;
     height: 100%;
     background: var(--blanco);
