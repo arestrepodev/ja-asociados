@@ -255,7 +255,7 @@ h1,h2,h3,h4,h5,h6{
     margin-bottom: .1rem 0;
     list-style: none;
     text-align: center;
-    padding:  0;
+    padding:  1rem;
     color: var(--naranja);
     transition: var(--transition);
     border-bottom: 1px solid var(--grisOscuro);
@@ -358,7 +358,7 @@ h1,h2,h3,h4,h5,h6{
 @media screen and (max-width: 768px){
     .Wrapper{
         grid-template-columns: 1fr;
-        grid-template-rows: 80px 1fr 1fr;
+        grid-template-rows: 80px 1fr 0fr;
         grid-template-areas: 
             'HeaderMobile'
             'Main'
