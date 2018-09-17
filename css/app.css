@@ -289,6 +289,16 @@ h1,h2,h3,h4,h5,h6{
     display: block;
 }
 
+/* Current Page Active */
+.current_page_item{
+    background: var(--grisOscuro);
+}
+
+.current_page_item .Navbar__link,
+.Navbar__list .current_page_item a{
+    color: var(--blanco);
+}
+
 /* Main */
 .Main{
     grid-area: Main;
