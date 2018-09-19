@@ -2,7 +2,7 @@
 
 WordPress Theme para la página de Jaime Arteaga y Asociados
 
-## ¿Cómo empezar a usarla?
+## ¿Cómo empezar a usarlo?
 Para instalar el tema descárgalo y súbelo en `WordPress > Temas > subir`
 
 ## Pre-requisitos
