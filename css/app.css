@@ -371,7 +371,7 @@ h1,h2,h3,h4,h5,h6{
 @media screen and (max-width: 768px){
     .Wrapper{
         grid-template-columns: 1fr;
-        grid-template-rows: 80px 1fr 0fr;
+        grid-template-rows: 80px auto 0fr;
         grid-template-areas: 
             'HeaderMobile'
             'Main'
