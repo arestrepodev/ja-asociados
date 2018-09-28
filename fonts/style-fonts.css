@@ -40,72 +40,71 @@ i {
 }
 .icon-aliados:before {
   content: "\e900";
-  color: #e19736;
+  
 }
 .icon-buscar:before {
   content: "\e901";
-  color: #e29a3e;
+  
 }
 .icon-equipo:before {
   content: "\e902";
-  color: #e19736;
+  
 }
 .icon-espanol:before {
   content: "\e903";
-  color: #e19736;
+  
 }
 .icon-experiencia:before {
   content: "\e904";
-  color: #d28d32;
+  
 }
 .icon-facebook:before {
   content: "\e905";
-  color: #e19736;
+  
 }
 .icon-galeria:before {
   content: "\e906";
-  color: #e19736;
+  
 }
 .icon-ingles:before {
   content: "\e907";
-  color: #e19736;
+  
 }
 .icon-inicio:before {
   content: "\e908";
-  color: #d28d32;
+  
 }
 .icon-linkedin:before {
   content: "\e909";
-  color: #e19736;
+  
 }
 .icon-privacidad:before {
   content: "\e90a";
-  color: #e19736;
+  
 }
 .icon-publicaciones:before {
   content: "\e90b";
-  color: #d28d32;
+  
 }
 .icon-razon:before {
   content: "\e90c";
-  color: #e19736;
+  
 }
 .icon-telefono .path1:before {
   content: "\e90d";
-  color: rgb(226, 154, 62);
+  
 }
 .icon-telefono .path2:before {
   content: "\e90e";
   margin-left: -1em;
-  color: rgb(225, 151, 54);
 }
 .icon-twitter:before {
   content: "\e90f";
-  color: #e19736;
+  
 }
 .icon-unete:before {
   content: "\e910";
-  color: #d28d32;
+  
 }
 .icon-drawer2:before {
   content: "\e9b1";
