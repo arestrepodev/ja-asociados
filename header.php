@@ -30,7 +30,7 @@
                 <a href="#" class="Mobile__langauge__text">EN</a>
                 <form action="" class="Mobile__search">
                     <a id="" class="Mobile__search__btn">
-                        <i class="fas fa-search Mobile__search__icon"></i>
+                        <i class="icon-search Mobile__search__icon"></i>
                     </a>
                     <input  id="" class="Mobile__input" type="text" name="Buscar" id="Buscar">
                 </form>
