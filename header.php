@@ -9,7 +9,6 @@
     <link rel="stylesheet" href="<?php bloginfo('stylesheet_url')?>">
     <!-- <link rel="stylesheet" href="css/responsive.css"> -->
     <!-- Icons -->
-    <link rel="stylesheet" href="<?php bloginfo('template_url');?>/fonts/style.css">
     <link rel="stylesheet" href="<?php bloginfo('template_url');?>/fonts/style-fonts.css">
     <!-- Fonts -->
     <link href="https://fonts.googleapis.com/css?family=Work+Sans:300,400,700" rel="stylesheet">
