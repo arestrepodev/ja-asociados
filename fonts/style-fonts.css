@@ -24,7 +24,7 @@
   -moz-osx-font-smoothing: grayscale;
 }*/
 
-i {
+i.custom-icon {
   /* use !important to prevent issues with browser extensions that change fonts */
   font-family: 'icomoon' !important;
   speak: none;
