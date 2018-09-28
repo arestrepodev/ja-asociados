@@ -291,7 +291,7 @@ h1,h2,h3,h4,h5,h6{
 }
 
 /* Current Page Active */
-.current_page_item{
+.Navbar .current_page_item{
     background: var(--grisOscuro);
 }
 
