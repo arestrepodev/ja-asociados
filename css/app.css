@@ -103,7 +103,7 @@ h1,h2,h3,h4,h5,h6{
     margin: 0;
     padding: 0;
     display: grid;
-    grid-template-columns: 6rem 1fr 1fr 1fr 1fr 1fr;
+    grid-template-columns: 8rem 1fr 1fr 1fr 1fr 1fr;
     /* grid-template-rows: 80px 290px 300px; */
     grid-template-rows: 80px auto 300px;
     grid-template-areas: 
@@ -226,7 +226,7 @@ h1,h2,h3,h4,h5,h6{
     grid-area: Navbar;
     position: fixed;
     z-index: 5000;
-    width: 6rem;
+    width: 8rem;
     height: 100%;
     background: var(--blanco);
     box-shadow: 3px 0px 3px rgba(0,0,0,.4);
@@ -242,7 +242,7 @@ h1,h2,h3,h4,h5,h6{
     margin-bottom: 1.5rem;
 }
 .Navbar__logo__img{
-    width: 80px;
+    width: 100px;
     text-align: center;
 }
 
