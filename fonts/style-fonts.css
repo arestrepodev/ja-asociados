@@ -1,10 +1,10 @@
 @font-face {
   font-family: 'icomoon';
-  src:  url('icomoon.eot?cswrvk');
-  src:  url('icomoon.eot?cswrvk#iefix') format('embedded-opentype'),
-    url('icomoon.ttf?cswrvk') format('truetype'),
-    url('icomoon.woff?cswrvk') format('woff'),
-    url('icomoon.svg?cswrvk#icomoon') format('svg');
+  src:  url('icomoon.eot?zh11a6');
+  src:  url('icomoon.eot?zh11a6#iefix') format('embedded-opentype'),
+    url('icomoon.ttf?zh11a6') format('truetype'),
+    url('icomoon.woff?zh11a6') format('woff'),
+    url('icomoon.svg?zh11a6#icomoon') format('svg');
   font-weight: normal;
   font-style: normal;
 }
@@ -28,79 +28,53 @@ i.custom-icon {
   content: "\e900";
   
 }
-.icon-equipo .path1:before {
+.icon-equipo:before {
   content: "\e901";
-  
 }
-.icon-equipo .path2:before {
+.icon-espanol:before {
   content: "\e902";
-  margin-left: -1em;
-  
-}
-.icon-equipo .path3:before {
-  content: "\e903";
-  margin-left: -1em;
-  color: rgb(229, 167, 85);
-}
-.icon-equipo .path4:before {
-  content: "\e904";
-  margin-left: -1em;
-  
-}
-.icon-equipo .path5:before {
-  content: "\e905";
-  margin-left: -1em;
-  
-}
-.icon-equipo .path6:before {
-  content: "\e906";
-  margin-left: -1em;
-  
-}
-.icon-equipo .path7:before {
-  content: "\e907";
-  margin-left: -1em;
-  
-}
-.icon-equipo .path8:before {
-  content: "\e908";
-  margin-left: -1em;
-  
-}
-.icon-equipo .path9:before {
-  content: "\e909";
-  margin-left: -1em;
-  
-}
-.icon-equipo .path10:before {
-  content: "\e90a";
-  margin-left: -1em;
-  
 }
 .icon-experienciaq:before {
-  content: "\e90b";
+  content: "\e903";
   
 }
+.icon-facebook:before {
+  content: "\e904";
+}
 .icon-galeria:before {
-  content: "\e90c";
+  content: "\e905";
   
 }
 .icon-home:before {
-  content: "\e90d";
+  content: "\e906";
   
 }
+.icon-ingles:before {
+  content: "\e907";
+}
+.icon-linkedin:before {
+  content: "\e908";
+}
 .icon-nuestra_razon:before {
-  content: "\e90e";
+  content: "\e909";
   
 }
 .icon-privacidad:before {
-  content: "\e90f";
+  content: "\e90a";
   
 }
 .icon-publicaciones:before {
-  content: "\e910";
-  
+  content: "\e90b";
 }
-.icon-drawer2:before {
-  content: "\e9b1";
+.icon-telefono:before {
+  content: "\e90c";
+}
+.icon-twitter:before {
+  content: "\e90d";
+}
+.icon-unete:before {
+  content: "\e90e";
+}
+.icon-youtube:before {
+  content: "\e90f";
 }
