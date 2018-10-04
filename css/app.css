@@ -319,7 +319,7 @@ h1,h2,h3,h4,h5,h6{
     /* width: 100%; */
     padding: 1rem;
     display: grid;
-    grid-template-columns: repeat(3, 33%);
+    grid-template-columns: repeat(3, 32%);
     grid-template-rows: 1fr 1fr;
     grid-gap: 0 1%;
     grid-template-areas: 
@@ -348,7 +348,9 @@ h1,h2,h3,h4,h5,h6{
     height: 40px;
     margin: 0 1rem;
 }
-
+.WidgetFooter__item img{
+  margin-right: 2.5rem;
+}
 .WidgetFooter__item,
 .WidgetFooterSocial__item{
     list-style: none;
@@ -512,8 +514,12 @@ h1,h2,h3,h4,h5,h6{
     /* Footer */
     .Footer{
         grid-template-columns: 1fr;
-        grid-template-rows: 1fr;
+        grid-template-rows: auto auto auto auto;
+        grid-template-areas: 'WidgetFooterImage' 'WidgetFooter1' 'WidgetFooter2' 'WidgetFooter3';
     }
+    .WidgetFooterImage{padding: 1rem 0;}
+    .WidgetFooter{padding: 1rem 0;}
+    .WidgetFooter__item img{margin-right: 1.5rem;}
 }
 
 
