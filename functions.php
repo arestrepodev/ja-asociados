@@ -20,7 +20,7 @@
 
     register_sidebar(array(
         'name' => 'Footer1',
-        'before_widget' => '<div class="WidgetFooter">',
+        'before_widget' => '<div class="WidgetFooter WidgetFooter1">',
         'after_widget' => '</div>',
         'before_title' => '<h3 class="WidgetFooter__title">',
         'after_title' => '</h3>'
@@ -28,7 +28,7 @@
 
     register_sidebar(array(
         'name' => 'Footer2',
-        'before_widget' => '<div class="WidgetFooter">',
+        'before_widget' => '<div class="WidgetFooter WidgetFooter2">',
         'after_widget' => '</div>',
         'before_title' => '<h3 class="WidgetFooter__title">',
         'after_title' => '</h3>'
@@ -36,7 +36,7 @@
 
     register_sidebar(array(
         'name' => 'Footer3',
-        'before_widget' => '<div class="WidgetFooter">',
+        'before_widget' => '<div class="WidgetFooter WidgetFooter3">',
         'after_widget' => '</div>',
         'before_title' => '<h3 class="WidgetFooter__title">',
         'after_title' => '</h3>'

@@ -5,8 +5,6 @@
             <?php if (!function_exists('dynamic_sidebar') || !dynamic_sidebar('Footer1')) : endif; ?>
             <?php if (!function_exists('dynamic_sidebar') || !dynamic_sidebar('Footer2')) : endif; ?>
             <?php if (!function_exists('dynamic_sidebar') || !dynamic_sidebar('Footer3')) : endif; ?>
-            <!-- Widget Copyright -->
-            <?php if (!function_exists('dynamic_sidebar') || !dynamic_sidebar('Copyright')) : endif;?>
         </footer>
 
 

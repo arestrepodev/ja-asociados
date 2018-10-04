@@ -322,17 +322,16 @@ h1,h2,h3,h4,h5,h6{
     grid-template-columns: repeat(3, 33%);
     grid-template-rows: 1fr 1fr;
     grid-gap: 0 1%;
-    grid-area: 
+    grid-template-areas: 
         'WidgetFooterImage . .'
-        'WidgetFooter WidgetFooter WidgetFooter';
+        'WidgetFooter1 WidgetFooter2 WidgetFooter3';
     background: var(--grisOscuro);
 }
-.WidgetFooterImage{
-    grid-area: WidgetFooterImage;
-}
-.WidgetFooter{
-    grid-area: WidgetFooter;
-}
+
+.WidgetFooterImage{grid-area: WidgetFooterImage;}
+.WidgetFooter1{grid-area: WidgetFooter1;}
+.WidgetFooter2{grid-area: WidgetFooter2;}
+.WidgetFooter3{grid-area: WidgetFooter3;}
 
 .WidgetFooter__list,
 .WidgetFooterSocial__list{
