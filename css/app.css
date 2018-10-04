@@ -320,7 +320,7 @@ h1,h2,h3,h4,h5,h6{
     padding: 1rem;
     display: grid;
     grid-template-columns: repeat(3, 32%);
-    grid-template-rows: 1fr 1fr;
+    grid-template-rows: auto 1fr;
     grid-gap: 0 1%;
     grid-template-areas: 
         'WidgetFooterImage . .'
