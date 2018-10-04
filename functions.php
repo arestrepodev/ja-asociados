@@ -13,6 +13,12 @@
 
     // Register Widgets Footers
     register_sidebar(array(
+        'name' => 'FooterImage',
+        'before_widget' => '<div class="WidgetFooterImage">',
+        'after_widget' => '</div>'
+    ));
+
+    register_sidebar(array(
         'name' => 'Footer1',
         'before_widget' => '<div class="WidgetFooter">',
         'after_widget' => '</div>',

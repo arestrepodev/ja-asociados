@@ -327,9 +327,13 @@ h1,h2,h3,h4,h5,h6{
         'WidgetFooter WidgetFooter WidgetFooter';
     background: var(--grisOscuro);
 }
-.WidgetFooter{
-    /* grid-area: WidgetFooter; */
+.WidgetFooterImage{
+    grid-area: WidgetFooterImage;
 }
+.WidgetFooter{
+    grid-area: WidgetFooter;
+}
+
 .WidgetFooter__list,
 .WidgetFooterSocial__list{
     margin: 0;
@@ -512,4 +516,75 @@ h1,h2,h3,h4,h5,h6{
         grid-template-rows: 1fr;
     }
 }
+
+
+/* Forms Styles */
+.JaForm{
+	width: 70%;	
+}
+
+.JaForm__group{
+	width: 70%;
+	display: flex;
+	justify-content: flex;
+	margin: 1.5rem 0;
+}
+.JaForm__label{
+	width: 30%;
+	
+	font-weight: bold;
+}
+
+.JaForm__input{
+	width: 155%;
+	padding: .8rem;
+	border: 1.5px solid #98959B;
+	border-radius: 4px;
+	color: #98959B;
+	font-weight: bold;
+}
+
+.JaForm__message{
+	height: 200px;
+	width: 150%;
+	padding: .8rem;
+  border: 1.5px solid #98959B;
+	border-radius: 4px;
+	color: #98959B;
+	font-weight: bold;
+}
+
+.JaForm__btn,
+.wpcf7-form-control .wpcf7-submit,
+.JaForm > input[type="submit"],
+input[type="submit"]{
+    padding: .8rem 1.8rem;
+    display: block;
+    width: 100%;
+		background: #E48E32;
+	 	color: #FFF;
+    font-size: 1.2rem;
+    font-weight: bold;
+		margin: 0 auto;
+		border-radius: 4px;
+}
+
+.JaForm p {
+	width: 85%;
+	display: flex;
+	justify-content: flex-start;
+}
+
+@media screen and (max-width: 1300px){
+	.JaForm__group{width: 85%;}
+	.JaForm p{width: 125%;}
+	.JaForm__message{width: 155%;} 
+}
+@media screen and (max-width: 1000px){
+	.JaForm__group{flex-direction: column;}
+	.JaForm p {
+    width: 135%;
+	}
+}
+
 
