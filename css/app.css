@@ -308,6 +308,64 @@ h1,h2,h3,h4,h5,h6{
     overflow-x: hidden;
 }
 
+/* Entries */
+.Entries{
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-gap: 0 1rem;
+}
+
+/* Publications */
+.Publication{
+    padding: 0 1rem;
+}
+
+.Publication__title{
+    color: var(--naranja);
+}
+
+.Publication__subtitle__link{
+    color: var(--negro);
+    text-decoration: none;
+}
+
+.Publication__data{
+    display: flex;
+    align-items: center;
+    color: var(--grisOscuro);
+}
+
+.Publication__data p{
+    padding: 0 .5rem;
+}
+
+.Publication__data  ul{
+    list-style: none;
+    margin: 0;
+    padding: 0 .5rem 0 0;
+}
+
+.Publication__data ul li a{
+    color: var(--grisOscuro);
+    text-decoration: none;
+}
+
+.Publication__content p{
+    line-height: 1.5;
+}
+
+.Publication__content a {
+    color: var(--naranja);
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.Thumb a img,
+.attachment-list_articles_thumbs {
+    max-width: 100%;
+    height: auto;
+}
+
 /* Sidebar */
 .Sidebar{
     grid-area: Sidebar;
@@ -506,6 +564,13 @@ h1,h2,h3,h4,h5,h6{
         transform: translateX(0px);
     }
 
+    /* Entries */
+    .Entries {
+        grid-template-columns: 1fr;
+    }
+
+    .SidebarArticle{display: none;}
+
     /* Footer */
     .Footer{
         grid-template-columns: 1fr;
@@ -513,3 +578,13 @@ h1,h2,h3,h4,h5,h6{
     }
 }
 
+
+/* General Styles for Entries in WordPress */
+.center {text-align: center}
+img.center, img[align="center"] {display: block;margin-left: auto;margin-right: auto;}
+.alignleft{float: left;}
+img.left, img[align="left"] {float: left;margin: 2px 10px 5px 0px}
+.alignright{float: right;}
+img.right, img[align="right"] {float: right;margin: 2px 0px 5px 10px}
+.clear{clear: both;}
+hr.clear{clear: both;visibility: hidden;margin: 0px;padding: 0px;height: 0px;}
