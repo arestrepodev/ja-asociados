@@ -226,7 +226,7 @@ h1,h2,h3,h4,h5,h6{
     grid-area: Navbar;
     position: fixed;
     z-index: 5000;
-    width: 6rem;
+    width: 8rem;
     height: 100%;
     background: var(--blanco);
     box-shadow: 3px 0px 3px rgba(0,0,0,.4);
@@ -369,6 +369,19 @@ h1,h2,h3,h4,h5,h6{
 /* Sidebar */
 .Sidebar{
     grid-area: Sidebar;
+}
+
+.Sidebar__widget ul {
+    list-style: none;
+}
+
+.Sidebar__widget ul li{
+    border-top: 1px solid var(--grisOscuro);
+}
+
+.Sidebar__widget ul li a{
+    color: var(--grisOscuro);
+    text-decoration: none;
 }
 
 /* Footer */
