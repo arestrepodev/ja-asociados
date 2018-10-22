@@ -312,12 +312,15 @@ h1,h2,h3,h4,h5,h6{
 .Entries{
     display: grid;
     grid-template-columns: 2fr 1fr;
+    grid-template-rows: auto 1fr;
+    grid-template-areas: 'Slider Slider' 'Publication SidebarArticle';
     grid-gap: 0 1rem;
 }
 
 /* Publications */
 .Publication{
     padding: 0 1rem;
+    grid-area: Publication;
 }
 
 .Publication__title{
@@ -371,17 +374,37 @@ h1,h2,h3,h4,h5,h6{
     grid-area: Sidebar;
 }
 
-.Sidebar__widget ul {
+.SidebarArticle{
+    grid-area: SidebarArticle;
+    padding-top: 1rem;
+}
+
+.Sidebar__widget{
+    padding: 0 1rem;
+}
+
+.Sidebar__widget ul,
+.widget ul {
     list-style: none;
+    padding: 0;
+    margin: 0;
 }
 
-.Sidebar__widget ul li{
+.Sidebar__widget ul li,
+.widget ul li{
     border-top: 1px solid var(--grisOscuro);
+    padding: 1rem 0;
 }
 
-.Sidebar__widget ul li a{
+.Sidebar__widget ul li a,
+.widget ul li a{
     color: var(--grisOscuro);
     text-decoration: none;
+}
+
+.Sidebar__widget ul li a:hover,
+.widget ul li a:hover{
+    color: var(--naranja);
 }
 
 /* Footer */
@@ -585,9 +608,12 @@ h1,h2,h3,h4,h5,h6{
     /* Entries */
     .Entries {
         grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
     }
 
-    .SidebarArticle{display: none;}
+    .SidebarArticle{
+        display: none;
+    }
 
     /* Footer */
     .Footer{
@@ -652,7 +678,6 @@ input[type="submit"]{
 		border-radius: 4px;
 }
 
-<<<<<<< HEAD
 
 /* General Styles for Entries in WordPress */
 .center {text-align: center}
@@ -663,7 +688,6 @@ img.left, img[align="left"] {float: left;margin: 2px 10px 5px 0px}
 img.right, img[align="right"] {float: right;margin: 2px 0px 5px 10px}
 .clear{clear: both;}
 hr.clear{clear: both;visibility: hidden;margin: 0px;padding: 0px;height: 0px;}
-=======
 .JaForm p {
 	width: 85%;
 	display: flex;
@@ -683,4 +707,3 @@ hr.clear{clear: both;visibility: hidden;margin: 0px;padding: 0px;height: 0px;}
 }
 
 
->>>>>>> 115ec04841fa2d69cc182fe90d60652239ce4615

@@ -1,10 +1,12 @@
 <?php get_header(); ?>
-        
+    
     <!-- Main -->
     <main class="Main Entries">
-        <!-- Slider -->
-            <!-- <p>Espacio para el Slider</p> -->
-
+            <!-- Slider -->
+            <div class="SliderPublication">
+                <?php echo('[rev_slider_vc alias="banner_publicaciones"]');?>
+            </div>
+            <!-- /Slider -->
             <!-- Entrada -->
             <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
             <article class="Publication">
@@ -47,16 +49,16 @@
                 <div class="Comments">
                     <h3>Comentarios</h3>
                     <div id="CommentBox">
-                        <?php comments_template(); ?> 
+                        <?php 
+                            // If comments are open or we have at least one comment, load up the comment template.
+                            comment_form();
+                        ?>
                     </div>
                 </div>
             </article>
             <article class="SidebarArticle">
                 <?php get_sidebar(); ?>
             </article>
-            
-            
-        <!-- Slider -->
     </main>
 <?php get_footer(); ?>
 
