@@ -251,6 +251,8 @@ h1,h2,h3,h4,h5,h6{
     margin: 0;
 }
 
+
+
 .Navbar__item,
 .Navbar__list .menu-item{
     margin-bottom: .1rem 0;
@@ -259,29 +261,18 @@ h1,h2,h3,h4,h5,h6{
     padding:  1rem;
     color: var(--naranja);
     transition: var(--transition);
-    border-bottom: 1px solid var(--grisOscuro);
-}
-.Navbar__item:hover,
-.Navbar__list .menu-item:hover{
-    background: var(--grisOscuro);
-    color: var(--blanco);
-}
-
-.Navbar__item:hover .Navbar__link,
-.Navbar__list .menu-item:hover a{
-    background: var(--grisOscuro);
-    color: var(--blanco);
+    cursor: pointer;
 }
 
 .Navbar__link,
-.Navbar__list .menu-item a{
+.Navbar__list > .menu-item a{
     text-decoration: none;
     color: var(--naranja);
     transition: var(--transition);
 }
 .Navbar__link:hover,
-.Navbar__list .menu-item a:hover{
-    color: var(--blanco);
+.Navbar__list > .menu-item a:hover{
+    color: var(--grisOscuro);
 }
 
 .Navbar__link__icon{
@@ -291,7 +282,7 @@ h1,h2,h3,h4,h5,h6{
 }
 
 /* Current Page Active */
-.Navbar .current_page_item{
+.Navbar > .current_page_item{
     background: var(--grisOscuro);
 }
 
@@ -299,6 +290,48 @@ h1,h2,h3,h4,h5,h6{
 .Navbar__list .current_page_item a{
     color: var(--blanco);
 }
+
+/* Submenus Style */
+.sub-menu{
+    padding: 1rem 0 0 0;
+    margin: 0;
+    display: none;
+    transition: all ease 500ms;
+}
+
+.Navbar__list .sub-menu li a,
+.sub-menu li a{
+    font-size: .9rem;
+    font-weight: 300;
+    color: var(--grisClaro);
+}
+
+.Navbar__list .sub-menu li a:hover,
+.sub-menu li a:hover{color: var(--naranja);}
+
+.Navbar__list .sub-menu li.current_page_item a:hover,
+.sub-menu li.current_page_item a:hover{
+    color: var(--blanco);
+}
+
+.Navbar__list .current_page_item{
+    background: var(--grisOscuro);
+    color: var(--blanco);
+}
+
+.Navbar__list .current_page_item a:hover{
+    color: var(--blanco);
+}
+
+.sub-menu li:first-child {border-top: 1px solid var(--grisClaro);}
+
+
+/* Submenu Dropdown Show */
+.menu-item:hover > .sub-menu {
+    display: block;
+}
+
+
 
 /* Main */
 .Main{
@@ -582,9 +615,12 @@ h1,h2,h3,h4,h5,h6{
         margin-left: .5rem;
     }
 
+    .sub-menu{display:  block !important;}
+
     .Mobile__dropdown,
     .sub-menu{
         list-style: none;
+        display: block;
         margin: .5rem 0;
     }
     .Mobile__dropdown__item,

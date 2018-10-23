@@ -28,5 +28,11 @@
 
     mobileMenu.addEventListener('click', showMobileMenu);
     closeMobileMenu.addEventListener('click', hideMobileMenu);
+    
+
+    // Display Block Submenus for left Menu
+    const pageCurrentSubMenu = document.querySelector('.current-menu-item');
+    pageCurrentSubMenu.parentElement.style.display = "block";
+
 
 })()
