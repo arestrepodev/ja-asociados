@@ -332,6 +332,31 @@ h1,h2,h3,h4,h5,h6{
 }
 
 
+/* Comments Form */
+.logged-in-as{
+    display: flex;
+    flex-direction: column;
+}
+
+.logged-in-as a{
+    color: var(--grisOscuro);
+    text-decoration: none;
+}
+
+.logged-in-as a:hover{
+    text-decoration: underline;
+}
+
+.comment-form-comment{
+ display: flex;
+ justify-content: flex-start;
+}
+
+.comment-form-comment label{
+    color: var(--grisOscuro);
+    font-weight: bold;
+    margin-right: .5rem;
+}
 
 /* Main */
 .Main{
