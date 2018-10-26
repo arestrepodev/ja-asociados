@@ -5,7 +5,7 @@
         register_nav_menus(array(
             'menu' => __('Menu Superior'),
             'mobile' => __('Menu Móvil'),
-            'menuLeft' => __('Menu Izquierdo')
+            'menuLeft' => __('Menu Izquierdo'),
         ));
     }
 
@@ -64,4 +64,19 @@
             $classes[] = 'is--Sidebar';
         }
         return $classes;
+    }
+
+    // Function Search
+    add_filter( 'wp_nav_menu_items', 'dcms_item_search', 10, 2);
+
+    function dcms_item_search( $items, $args ) {
+
+        if ($args->theme_location == 'menu') {
+
+            $items .= '<li class="NavList__item Language">'
+                    . '<a href="#" class="NavList__link Language__link">EN</a>'
+                    . '</li>'
+                    . '<li class="NavList__item">'. get_search_form( false ) .'</li>';
+        }
+        return $items;
     }

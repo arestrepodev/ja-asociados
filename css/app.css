@@ -171,6 +171,7 @@ h6 {
 }
 .NavList {
   display: flex;
+  align-items: center;
 }
 
 .NavList__item,
@@ -230,6 +231,36 @@ h6 {
   color: var(--grisOscuro);
 }
 
+.Search ::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: var(--blanco);
+  opacity: 1; /* Firefox */
+}
+
+.Search  :-ms-input-placeholder { /* Internet Explorer 10-11 */
+  color: var(--blanco);
+}
+
+.Search  ::-ms-input-placeholder { /* Microsoft Edge */
+  color: var(--blanco);
+}
+
+.Search ::placeholder:active,
+.Search ::placeholder:focus { /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: var(--grisClaro);
+  opacity: 1; /* Firefox */
+}
+
+.Search  :-ms-input-placeholder:active,
+.Search ::placeholder:active:focus { /* Internet Explorer 10-11 */
+  color: var(--grisClaro);
+}
+
+.Search  ::-ms-input-placeholder:active,
+.Search ::placeholder:active:focus { /* Microsoft Edge */
+  color: var(--grisClaro);
+}
+
+
 .Search__active {
   visibility: visible;
   width: 250px;
@@ -240,6 +271,31 @@ h6 {
   display: none;
   transition: var(--transition);
 }
+
+/* Search close */
+.Search__close{
+  padding: .5rem;
+  color: var(--blanco);
+  text-decoration: none;
+  font-size: 1.3rem;
+  display: none;
+}
+
+/* Search Submit */
+.Search__submit{
+  width: 30px;
+  height: 30px;
+  background: none;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  color: var(--blanco);
+  font-size: 1.5rem;
+  display: none;
+}
+
+/* Dynamic Class for Search Functionality */
+.is--block{display: block;}
 
 @keyframes SearchAnimation {
   from {
@@ -542,6 +598,34 @@ h6 {
 
 .Sidebar__widget ul li a:hover,
 .widget ul li a:hover {
+  color: var(--naranja);
+}
+
+/* Results Search */
+.Results{padding: 1rem;}
+.Results__list{
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(400px,1fr));
+  grid-gap: 0 1rem;
+}
+.Results__list__item{
+  display: flex;
+  flex-direction: column;
+}
+
+.Results__list__title a{
+ color: var(--naranja);
+ text-decoration: none;
+}
+
+.Results__list__figure{margin: 0;}
+
+.Results__list__text{
+  line-height: 1.5;
+  color: var(--grisOscuro);
+}
+
+.Results__list__readmore{
   color: var(--naranja);
 }
 

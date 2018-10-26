@@ -28,12 +28,12 @@
             </div>
             <div class="Mobile__language">
                 <a href="#" class="Mobile__langauge__text">EN</a>
-                <form action="" class="Mobile__search">
+                <!-- <form action="" class="Mobile__search">
                     <a id="" class="Mobile__search__btn">
                         <i class="icon-search Mobile__search__icon"></i>
                     </a>
                     <input  id="" class="Mobile__input" type="text" name="Buscar" id="Buscar">
-                </form>
+                </form> -->
             </div>
         </div>
         <!-- Menu Mobile -->
@@ -55,84 +55,6 @@
                     )
                 );
             ?>
-            <!-- <ul class="Mobile__navbar__list">
-                <li class="Mobile__navbar__item">
-                    <a href="#" class="Mobile__navbar__link">
-                        <i class="Mobile__navbar__icon icon-home"></i>
-                        <span class="Mobile__navbar__text">Inicio</span>
-                    </a>
-                </li>
-                <li class="Mobile__navbar__item">
-                    <a href="#" class="Mobile__navbar__link">
-                        <i class="Mobile__navbar__icon icon-sun"></i>
-                        <span class="Mobile__navbar__text">Nuestra razón</span>
-                    </a>
-                    <ul class="Mobile__dropdown">
-                        <li class="Mobile__dropdown__item">
-                            <a href="#" class="Mobile__dropdown__link">
-                                <i class="icon-circle-right Mobile__dropdwon__icon"></i>
-                                ¿Que es Ja?
-                            </a>
-                        </li>
-                        <li class="Mobile__dropdown__item">
-                            <i class="icon-circle-right Mobile__dropdwon__icon"></i>
-                            <a href="#" class="Mobile__dropdown__link">Historia</a>
-                        </li>
-                    </ul>
-                </li>
-                <li class="Mobile__navbar__item">
-                    <a href="#" class="Mobile__navbar__link">
-                        <i class="Mobile__navbar__icon icon-folder"></i>
-                        <span class="Mobile__navbar__text">Nuestra Experiencia</span>
-                    </a>
-                    <ul class="Mobile__dropdown">
-                        <li class="Mobile__dropdown__item">
-                            <i class="icon-circle-right Mobile__dropdwon__icon"></i>                            
-                            <a href="#" class="Mobile__dropdown__link">Iniciativas Propias</a>
-                        </li>
-                        <li class="Mobile__dropdown__item">
-                            <i class="icon-circle-right Mobile__dropdwon__icon"></i>
-                            <a href="#" class="Mobile__dropdown__link">Logros destacados</a>
-                        </li>
-                    </ul>
-                </li>
-                <li class="Mobile__navbar__item">
-                    <a href="#" class="Mobile__navbar__link">
-                        <i class="Mobile__navbar__icon icon-image"></i>
-                        <span class="Mobile__navbar__text">Galeria</span>
-                    </a>
-                </li>
-                <li class="Mobile__navbar__item">
-                    <a href="#" class="Mobile__navbar__link">
-                        <i class="Mobile__navbar__icon icon-users"></i>
-                        <span class="Mobile__navbar__text">Equipo</span>
-                    </a>
-                    <ul class="Mobile__dropdown">
-                        <li class="Mobile__dropdown__item">
-                            <i class="icon-circle-right Mobile__dropdwon__icon"></i>                        
-                            <a href="#" class="Mobile__dropdown__link">Asi Funcionamos</a>
-                        </li>
-                    </ul>
-                </li>
-                <li class="Mobile__navbar__item">
-                    <a href="#" class="Mobile__navbar__link">
-                        <i class="Mobile__navbar__icon icon-books"></i>
-                        <span class="Mobile__navbar__text">Aliados</span>
-                    </a>
-                </li>
-                <li class="Mobile__navbar__item">
-                    <a href="#" class="Mobile__navbar__link">
-                        <i class="Mobile__navbar__icon fas icon-file-empty"></i>
-                        <span class="Mobile__navbar__text">Publicaciones</span>
-                    </a>
-                </li>
-                <li class="Mobile__navbar__item">
-                    <a href="#" class="Mobile__navbar__link">
-                        <i class="Mobile__navbar__icon icon-lock"></i>
-                        <span class="Mobile__navbar__text">Políticas de Privacidad</span>
-                    </a>
-                </li>
-            </ul> -->
         </div>
 
         <!-- Header -->
@@ -148,20 +70,6 @@
                     )
                 )
             ?>
-            <ul class="NavList">
-                <!-- Language -->
-                <li class="NavList__item Language">
-                    <a href="#" class="NavList__link Language__link">EN</a>
-                </li>
-            </ul>
-           
-            <!-- Search -->
-            <form action="" class="Search">
-                <a id="js-searchBtn" class="Search__btn">
-                    <i class="icon-search Search__icon"></i>
-                </a>
-                <input  id="js-searchInput" class="Search__input" type="text" name="Buscar" id="Buscar">
-            </form>
         </header>
 
          <!-- Navbar Left -->
@@ -179,46 +87,4 @@
                     'container_class' => 'Navbar__list'
                 ));
             ?>
-            <!-- <ul class="Navbar__list">
-                <li class="Navbar__item">
-                    <a href="#" class="Navbar__link">
-                        <i class="Navbar__link__icon icon-home"></i>
-                    </a>
-                </li>
-                <li class="Navbar__item">
-                    <a href="#" class="Navbar__link">
-                        <i class="Navbar__link__icon icon-sun"></i>
-                    </a>
-                </li>
-                <li class="Navbar__item">
-                    <a href="#" class="Navbar__link">
-                        <i class="Navbar__link__icon icon-folder"></i>
-                    </a>
-                </li>
-                <li class="Navbar__item">
-                    <a href="#" class="Navbar__link">
-                        <i class="Navbar__link__icon icon-image"></i>
-                    </a>
-                </li>
-                <li class="Navbar__item">
-                    <a href="#" class="Navbar__link">
-                        <i class="Navbar__link__icon icon-users"></i>
-                    </a>
-                </li>
-                <li class="Navbar__item">
-                    <a href="#" class="Navbar__link">
-                        <i class="Navbar__link__icon icon-books"></i>
-                    </a>
-                </li>
-                <li class="Navbar__item">
-                    <a href="#" class="Navbar__link">
-                        <i class="Navbar__link__icon fas icon-file-empty"></i>
-                    </a>
-                </li>
-                <li class="Navbar__item">
-                    <a href="#" class="Navbar__link">
-                        <i class="Navbar__link__icon icon-lock"></i>
-                    </a>
-                </li>
-            </ul> -->
         </nav>
