@@ -6,6 +6,7 @@
             'menu' => __('Menu Superior'),
             'mobile' => __('Menu Móvil'),
             'menuLeft' => __('Menu Izquierdo'),
+            'mobileLang' => __('Lenguaje Móvil')
         ));
     }
 

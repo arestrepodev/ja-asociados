@@ -608,6 +608,7 @@ h6 {
   grid-template-columns: repeat(auto-fill, minmax(400px,1fr));
   grid-gap: 0 1rem;
 }
+
 .Results__list__item{
   display: flex;
   flex-direction: column;

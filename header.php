@@ -27,13 +27,19 @@
                 <img class="Mobile__logo__img" src="<?php bloginfo('template_url')?>/img/logo-vector-web-ja.png" alt="Logotipo">
             </div>
             <div class="Mobile__language">
-                <a href="#" class="Mobile__langauge__text">EN</a>
-                <!-- <form action="" class="Mobile__search">
-                    <a id="" class="Mobile__search__btn">
-                        <i class="icon-search Mobile__search__icon"></i>
-                    </a>
-                    <input  id="" class="Mobile__input" type="text" name="Buscar" id="Buscar">
-                </form> -->
+                <?php
+                wp_nav_menu(
+                    array(
+                        'container' => false,
+                        'items_wrap' => '<ul class="MobileLanguage__list">%3$s</ul>',
+                        'theme_location' => 'mobileLang',
+                        'container_class' => 'MobileLanguage__list',
+                        'link_before' => '<span class="">',
+                        'link_after' => '</span>'
+                    )
+                )
+                ?>
+                <!-- <a href="#" class="Mobile__langauge__text">EN</a> -->
             </div>
         </div>
         <!-- Menu Mobile -->
