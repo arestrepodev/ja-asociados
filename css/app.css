@@ -427,6 +427,19 @@ h6 {
   display: block;
 }
 
+/* Mobile Language Menu */
+.MobileLanguage__list{
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.MobileLanguage__list .wpml-ls-menu-item a{
+  border: 1px solid var(--naranja);
+  color: var(--naranja);
+}
+
+
 /* Comments Form */
 .logged-in-as {
   display: flex;
